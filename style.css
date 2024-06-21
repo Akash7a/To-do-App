@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgb(197, 197, 5), rgb(2, 148, 211));
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.timedrForm {
+    display: flex;
+    gap: 10px;
+}
+
+.timer-container h3 {
+    position: relative;
+    top: -10px;
+}
+
+.timer-container {
+    padding: 20px;
+    border: 0.1px solid white;
+    border-radius: 20px;
+    width: 406px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.input-container {
+    width: 406px;
+}
+
+.input-container form {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+.task_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.task{
+    padding: 10px 0 ;
+    border-top: 1px solid white;
+    text-align: start;
+
+}
+.input-container form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 20px;
+    border: 0;
+    text-align: center;
+}
+
+form button {
+    background-color: rgb(50, 164, 205);
+    color: white;
+    text-shadow: 0 0 2px black;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 0 5px black;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+
+form button:hover {
+    opacity: 0.7;
+}
+.check_btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: aquamarine;
+    text-shadow: 2px 2px 5px black , -2px -2px 5px black;
+    font-size: 25px;
+}
+.pause_btn{
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    color: white;
+    font-size: 25px;
+}
+.cancel_btn{
+    position: absolute;
+    top: 5px;
+    right:70px;
+    color: white;
+    font-size: 25px;
+}
+.complete{
+    text-decoration: line-through;
+    color: blue;
+    text-transform: capitalize;
+    font-weight: bolder;
+    line-height: 30px;
+}
